@@ -1,0 +1,10 @@
+.hero__main{
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 120px;
+}
+
+.copyBtn{
+    background-color: #EE0E47;
+}

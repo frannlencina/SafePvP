@@ -1,0 +1,6 @@
+.wave{
+    pointer-events: none;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
