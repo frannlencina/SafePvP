@@ -1,6 +1,6 @@
 import React from 'react'
-import Logo from '../../assets/imgs/logo-safe-bw.png'
-import './footer.css'
+import Logo from '../assets/imgs/logo-safe-bw.png'
+
 
 function Footer() {
     return (
@@ -20,7 +20,7 @@ function Footer() {
                     </ul>
                     <div className="footerText text-white opacity-50 mt-10 ">
                         <p>SafePvP is not affiliated with MojangAb, the company's
-commercial activities comply with the policy of Mojang AB.</p>
+                            commercial activities comply with the policy of Mojang AB.</p>
                     </div>
                 </div>
                 <div className="footerSocial">

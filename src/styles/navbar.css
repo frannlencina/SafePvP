@@ -82,6 +82,7 @@
         height: 100vh;
         border-radius: 1000px 0px 0px 0px;
         background-color: #171717;
+        opacity: 1;
         top: 100px;
         left: 100%;
         z-index: 2;

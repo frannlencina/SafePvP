@@ -1,6 +1,6 @@
 import React from 'react'
-import waveImg from '../../assets/imgs/Wave.png'
-import './wave.css'
+import waveImg from '../assets/imgs/Wave.png'
+
 
 function Wave() {
   return (

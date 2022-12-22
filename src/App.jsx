@@ -1,8 +1,10 @@
-import './App.css'
-import Navbar from './components/Navbar/navbar'
-import Hero from './components/Hero/hero'
-import Wave from './components/Wave/wave'
-import Footer from './components/Footer/footer'
+import './styles/global.css'
+
+import Navbar from './components/navbar'
+import Hero from './components/hero'
+import Wave from './components/wave'
+import Footer from './components/footer'
+
 
 function App() {
 
