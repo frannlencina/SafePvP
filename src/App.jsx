@@ -13,11 +13,11 @@ function App() {
       <section className='navbar'>
         <Navbar />
       </section>
-      <section className='hero'>
+      <section className='hero mt-20'>
         <Hero />
       </section>
       <Wave />
-      <section className='footer'>
+      <section className='footer pt-20'>
         <Footer />
       </section>
     </div>

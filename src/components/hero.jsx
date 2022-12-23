@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import axios from "axios";
 
 import HeroRender from '../assets/imgs/hero-render.png'
-import HeroRenderMobile from '../assets/imgs/hero-render-mobile.svg'
 
 const baseURL = 'https://api.mcsrvstat.us/2/safepvp.us';
 
@@ -15,7 +14,7 @@ function Hero() {
         axios.get(baseURL).then((response) => {
           setOnlinee(response.data.online);
           setPlayersOnline(response.data.players.online)
-
+            
         });
       }, []);
 
@@ -23,12 +22,12 @@ function Hero() {
         <div className="container mx-auto columns-1 flex flex-col md:columns-2 md:flex-row justify-center h-auto p-5">
             <div className='hero__main flex flex-col justify-center items-center text-center'>
                 <div className=" hero__title">
-                    <h1 className='text-white font-bold text-6xl'>WELCOME TO</h1>
-                    <h2 className='text-white font-bold text-6xl mb-5'>SAFEPVP</h2>
-                    <p className='block font-medium text-white opacity-50 text-2xl mb-5'>Lorem simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <h1 className='text-white font-bold text-6xl md:text-5xl lg:text-6xl'>WELCOME TO</h1>
+                    <h2 className='text-white font-bold text-6xl mb-5 md:text-5xl lg:text-6xl'>SAFEPVP</h2>
+                    <p className='block font-medium text-white opacity-50 text-2xl mb-5 md:text-xl lg:text-2xl'>Lorem simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
                 </div>
-                <div className="hero__players flex flex-col sm:flex-row">
-                <div className="box__buttons ">
+                <div className="hero__players flex flex-col sm:flex-row md:text-sm lg:text-lg">
+                <div className="box__buttons">
                         <button className='mb-5 sm:mb-0 px-2 py-2  rounded-lg font-semibold text-white transition-all duration-300 bg-rose-600 border-2 border-rose-600 hover:scale-110 hover:border-2 hover:border-rose-600 hover:bg-transparent'>COPY IP <i class="ri-clipboard-line"></i></button>
                     </div>
                     <div className="box__players flex gap-x-3 px-5 py-3 rounded-lg bg-black bg-opacity-50 ml-5 text-center justify-center cursor-pointer hover:scale-110 transition-all duration-300">
@@ -37,8 +36,8 @@ function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="w-full rounded-xl overflow-hidden mt-10 ">
-                <img className='object-cover w-full h-full overflow-hidden' src={HeroRender}  alt="" />
+            <div className="w-full mt-10 rounded-xl overflow-hidden md:mt-0 md:w-full ">
+                <img className='object-cover w-full h-full overflow-hidden md:object-contain 2xl:w-4/5 ' src={HeroRender} alt="" />
             </div>
         </div>
 
