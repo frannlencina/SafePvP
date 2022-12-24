@@ -3,15 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.root,
+#root,
+#docs-root {
+  --main-black: #121212;
+  --main-white: white;
+  --main-rose: #E11D48;
+}
+
 *{
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
-
-
-.App{
+.heroApp{
   background-color: #121212;
   background-image: url('../assets/imgs/wallpaper.png');
   background-size: cover;
@@ -27,3 +33,20 @@
   width: 100%;
 }
 
+.gameHeader{
+  background-color: #121212;
+}
+
+.gameFooter{
+  background-color: #121212;
+}
+
+.modesContainer{
+  background-color: black;
+  background-image: url('../assets/imgs/textureMinecraft.png');
+}
+
+.customBuilds{
+  background-color: white;
+  background-image: url('../assets/imgs/textureMinecraft-Builds.png');
+}

@@ -1,36 +1,44 @@
+.bxl-discord-alt {
+    color: #5562EA;
+}
+
+.bxl-youtube {
+    color: #F70000;
+}
+
+.bxl-twitter {
+    color: #1C96E8;
+}
 
 
-.navLinks a{
+.navLinks a {
     color: grey;
     opacity: 1;
     transition: all 0.3s ease-in-out;
 }
 
-.navLinks a:first-child{
+.navLinks a:first-child {
     color: white;
     opacity: 1;
 }
 
-.navLinks a:hover{
-    color: #EE0E47;
-}
 
-.navLinks a i{
+.navLinks a i {
     position: relative;
     top: 2px;
 }
 
-.navSocial ul li a{
+.navSocial ul li a {
     margin: 0px 5px;
 }
 
-.homeIcon{
+.homeIcon {
     padding: 5px;
     border-radius: 5px;
     background-color: #333333;
 }
 
-.menuBtn{
+.menuBtn {
     cursor: pointer;
     margin-right: 30px;
     display: none;
@@ -39,26 +47,26 @@
     transition: all 0.2s ease-in-out;
 }
 
-.menuBtn:hover{
+.menuBtn:hover {
     transform: rotate(360deg);
     color: #EE0E47;
 }
 
 /* RESPONSIVE */
 
-#check{
+#check {
     display: none;
     margin-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {
 
-    .navSocial{
+    .navSocial {
         display: none;
     }
-    
 
-    .navLinks li{
+
+    .navLinks li {
         position: fixed;
         display: flex;
         justify-content: center;
@@ -76,26 +84,31 @@
 
         transition: all 0.3s ease-in-out;
     }
-    
-    .menuBtn{
+
+    .menuBtn {
         display: flex;
     }
 
-    #check:checked ~ ul li {
+    #check:checked~ul li {
         left: 0;
         border-radius: 100px 0px 0px 0px;
     }
 
-    #check:checked ~ label{
+    #check:checked~label {
         color: #EE0E47;
     }
-  }
+}
 
 @media only screen and (max-width: 457px) {
-    .menuBtn{
+    .menuBtn {
         right: -40px;
     }
-    .navLogo{
-       left: 0px;
+
+    .navLogo {
+        left: 0px;
     }
-  }
+}
+
+.navbarBackground {
+    background-color: #121212;
+}

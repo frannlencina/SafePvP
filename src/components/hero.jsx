@@ -5,10 +5,18 @@ import HeroRender from '../assets/imgs/hero-render.png'
 
 const baseURL = 'https://api.mcsrvstat.us/2/safepvp.us';
 
+import { Toaster, toast } from 'react-hot-toast';
+
 function Hero() {
     
     const [onlinee, setOnlinee] = useState(false)
     const [playersOnline, setPlayersOnline] = useState()
+
+    function Toast(){
+        toast.success('IP COPIADA!');
+        const clipBoard = document.getElementById('clipboard')
+            navigator.clipboard.writeText(clipBoard.value);
+    }
 
     useEffect(() => {
         axios.get(baseURL).then((response) => {
@@ -28,17 +36,22 @@ function Hero() {
                 </div>
                 <div className="hero__players flex flex-col sm:flex-row md:text-sm lg:text-lg">
                 <div className="box__buttons">
-                        <button className='mb-5 sm:mb-0 px-2 py-2  rounded-lg font-semibold text-white transition-all duration-300 bg-rose-600 border-2 border-rose-600 hover:scale-110 hover:border-2 hover:border-rose-600 hover:bg-transparent'>COPY IP <i class="ri-clipboard-line"></i></button>
+                        <button id="clipboard" onClick={Toast} value="safepvp.us" className='mb-5 sm:mb-0 px-2 py-2  rounded-lg font-semibold text-white transition-all duration-300 bg-rose-600 border-2 border-rose-600 hover:scale-110 hover:border-2 hover:border-rose-600 hover:bg-transparent'>COPY IP <i class="ri-clipboard-line"></i></button>
                     </div>
                     <div className="box__players flex gap-x-3 px-5 py-3 rounded-lg bg-black bg-opacity-50 ml-5 text-center justify-center cursor-pointer hover:scale-110 transition-all duration-300">
                         <i class="ri-team-fill text-white"></i>
-                        <p className='textColor font-extrabold text-rose-600'> {playersOnline} </p><p className='font-extrabold text-white'>ONLINE</p><p className='font-medium text-white'>PLAYERS</p> <p className='text-red-700 font-bold'>{ onlinee ? '' : '(Offline)'}</p>
+                        <p className='textColor font-extrabold text-rose-600'> {playersOnline} </p><p className='font-extrabold text-white'>ONLINE</p><p className='font-medium text-white'>PLAYERS</p> <p className='text-red-700 font-bold'>{ onlinee ? '' : 'MAINTENANCE'}</p>
                     </div>
                 </div>
             </div>
             <div className="w-full mt-10 rounded-xl overflow-hidden md:mt-0 md:w-full ">
                 <img className='object-cover w-full h-full overflow-hidden md:object-contain 2xl:w-4/5 ' src={HeroRender} alt="" />
             </div>
+            <Toaster toastOptions={{
+                style: {
+                    fontWeight: "600",
+                },
+            }} />
         </div>
 
     )
