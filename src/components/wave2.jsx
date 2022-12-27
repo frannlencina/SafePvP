@@ -1,5 +1,5 @@
 import React from 'react'
-import waveImg2 from '../assets/imgs/Wave22.svg'
+import waveImg2 from '../assets/imgs/Wave2-min.png'
 
 function Wave2() {
     return (

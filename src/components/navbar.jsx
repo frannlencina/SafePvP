@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import '../styles/navbar.css'
 
-import Logo from '../assets/imgs/logo-safe.png'
+import Logo from '../assets/imgs/logo-safe-min.png'
 
 
 
@@ -14,7 +14,7 @@ function Navbar() {
 
     return (
         <div className=''>
-            <nav class="navbarBackground px-2 sm:px-4 py-2.5 rounded ">
+            <nav class="navbarBackground px-2 sm:px-4 py-2.5 rounded">
                 <div class="container flex flex-row items-center justify-between mx-auto">
                     <a href="#" class="flex items-center">
                         <img src={Logo} class="h-10 mr-3 sm:h-9" alt="SafePvP Logo" />
@@ -25,14 +25,14 @@ function Navbar() {
                         <label className='menuBtn ml-10' htmlFor="check"><i class="fa-solid fa-bars fa-2x"></i></label>
                         <ul class="navLinks ">
                             <li className='flex flex-col md:flex-row md:gap-y-0 md:gap-x-6 '>
-                                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded bg-main-rose dark:text-white" aria-current="page">Home</a>
-                                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white ">About</a>
-                                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white ">Services</a>
-                                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white  ">Contact</a>
+                                <a href="#" class="block py-2 pl-3 pr-4 text-white rounded bg-main-rose dark:text-white" aria-current="page"> <i class="ri-home-4-line"></i> Home</a>
+                                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white "> <i class="ri-shopping-cart-line"></i> Shop</a>
+                                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white "> <i class="ri-file-list-3-line"></i> Rules</a>
+                                <a href="#" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white  "> <i class="ri-group-line"></i> Team</a>
                                 
                             </li>
                         </ul>
-                        <button type="button" id='modalBtn' onClick={toggleModal} class="text-white ml-10 bg-rose-600 hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Social</button>
+                        <button type="button" id='modalBtn' onClick={toggleModal} class="text-white ml-10 bg-main-rose hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Social</button>
                     </div>
                 </div>
             </nav>

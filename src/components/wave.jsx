@@ -1,5 +1,5 @@
 import React from 'react'
-import waveImg from '../assets/imgs/Wave.png'
+import waveImg from '../assets/imgs/Wave-min.png'
 
 
 function Wave() {

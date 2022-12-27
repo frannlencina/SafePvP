@@ -1,8 +1,9 @@
 import React from 'react'
 
-import kitmapCard from '../assets/imgs/Kitmap-Card2.png';
-import hcfCard from '../assets/imgs/Hcf-Card2.png';
-import practiceCard from '../assets/imgs/Practice-Card2.png';
+import kitmapCard from '../assets/imgs/Kitmap-Card2-min.png';
+import hcfCard from '../assets/imgs/Hcf-Card2-min.png';
+import practiceCard from '../assets/imgs/Practice-Card2-min.png';
+
 
 
 function GameMode() {
@@ -15,7 +16,7 @@ function GameMode() {
                 </div>
             </div>
             <div className="modes">
-                <div className="modesContainer flex flex-col items-center justify-center gap-10 py-20 lg:flex-row p-20">
+                <div className="modesContainer flex flex-col items-center justify-center gap-10 py-20 p-20 lg:flex-row ">
                     <div className="kitmapContainer">
                         <div className="kitmapImage w-80 lg:w-auto cursor-pointer hover:scale-105 duration-300 ease-out">
                             <img src={kitmapCard} alt="" />

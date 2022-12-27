@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Koths from '../assets/imgs/koths-image.png'
-import Citadels from '../assets/imgs/citadels-image.png'
-import Roads from '../assets/imgs/roads-image.png'
+import Koths from '../assets/imgs/koths-image-compressed.png'
+import Citadels from '../assets/imgs/citadels-image-min.png'
+import Roads from '../assets/imgs/roads-image-min.png'
 
 import Wave2 from './wave2'
 

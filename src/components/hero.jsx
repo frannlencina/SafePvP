@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios";
 
-import HeroRender from '../assets/imgs/hero-render.png'
+import HeroRender from '../assets/imgs/hero-render-min.png'
 
 const baseURL = 'https://api.mcsrvstat.us/2/safepvp.us';
 
@@ -17,7 +17,7 @@ function Hero() {
         const clipBoard = document.getElementById('clipboard')
             navigator.clipboard.writeText(clipBoard.value);
     }
-
+    
     useEffect(() => {
         axios.get(baseURL).then((response) => {
           setOnlinee(response.data.online);
