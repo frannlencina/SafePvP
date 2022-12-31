@@ -1,32 +1,44 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 
 import Navbar from '../components/navbar'
-import Hero from '../components/hero'
+const Hero = lazy(() => import('../components/hero'));
 import Wave from '../components/wave'
+const GameMode = lazy(() => import('../components/gameMode'));
+const CustomBuilds = lazy(() => import('../components/customBuilds'));
 import Footer from '../components/footer'
-import GameMode from '../components/gameMode'
-import CustomBuilds from '../components/customBuilds'
+
+
 
 function Home() {
     return (
         <>
             <section className='heroApp'>
                 <section className='navbar'>
-                    <Navbar />
+                    <Suspense fallback={<h1>Cargando...</h1>}>
+                        <Navbar />
+                    </Suspense>
                 </section>
                 <section className='hero mt-20'>
-                    <Hero />
+                    <Suspense fallback={<h1>Cargando...</h1>}>
+                        <Hero />
+                    </Suspense>
                 </section>
                 <Wave />
             </section>
             <section className='gameModes'>
-                <GameMode />
+                <Suspense fallback={<h1>Cargando...</h1>}>
+                    <GameMode />
+                </Suspense>
             </section>
             <section className='customBuilds'>
-                <CustomBuilds />
+                <Suspense fallback={<h1>Cargando...</h1>}>
+                    <CustomBuilds />
+                </Suspense>
             </section>
             <section className='footer pt-20'>
-                <Footer />
+                <Suspense fallback={<h1>Cargando...</h1>}>
+                    <Footer />
+                </Suspense>
             </section>
         </>
     )

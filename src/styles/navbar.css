@@ -17,11 +17,6 @@
     transition: all 0.3s ease-in-out;
 }
 
-.navLinks a:first-child {
-    color: white;
-    opacity: 1;
-}
-
 
 .navLinks a i {
     position: relative;
