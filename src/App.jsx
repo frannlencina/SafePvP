@@ -1,37 +1,25 @@
 import './styles/global.css'
 
-import Navbar from './components/navbar'
-import Hero from './components/hero'
-import Wave from './components/wave'
-import Footer from './components/footer'
-import GameMode from './components/gameMode'
-import Wave2 from './components/wave2'
-import CustomBuilds from './components/customBuilds'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+
+import Team from './pages/Team'
+import Rules from './pages/Rules'
+import Home from './pages/Home'
+import NoMatch from './pages/NoMatch'
+
 
 function App() {
 
   return (
-    <div className="App">
-      <section className='heroApp'>
-        <section className='navbar'>
-          <Navbar />
-        </section>
-        <section className='hero mt-20'>
-          <Hero />
-        </section>
-      <Wave />
-      </section>
-      <section className='gameModes'>
-        <GameMode />
-      </section>
-      <section className='customBuilds'>
-        <CustomBuilds />
-      </section>
-      <section className='footer pt-20'>
-        <Footer />
-      </section>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+          <Route path='/rules' element={<Rules />} />
+          <Route path='/team' element={<Team />} />
+          <Route path='/' element={<Home />} />
+          <Route path='*' element={<NoMatch />} />
+      </Routes>
+      </BrowserRouter>
+      )
 }
 
-export default App
+      export default App
