@@ -50,3 +50,13 @@
   background-color: white;
   background-image: url('../assets/imgs/textureMinecraft-Builds.png');
 }
+
+.rulesContainer{
+  background-color: white;
+  background-image: url('../assets/imgs/textureMinecraft-Builds.png');
+}
+
+.rulesContainerJr{
+  background-color: rgba(0, 0, 0, 0.793);
+  background-image: url('../assets/imgs/textureMinecraft-Builds.png');
+}

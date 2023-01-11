@@ -12,7 +12,7 @@ function CustomBuilds() {
       <Wave2 />
       <div className="mx-auto items-center">
         <div className="title flex flex-col justify-center text-center items-center mb-20">
-          <h3 className=' text-main-black font-bold text-5xl md:text-5xl lg:text-6xl'>GAME MODES</h3>
+          <h3 className=' text-main-black font-bold text-5xl md:text-5xl lg:text-6xl'>CUSTOM BUILDS</h3>
           <p className='font-normal text-main-black text-lg md:text-xl lg:text-2xl'>Lorem simply dummy text of the printing and typesetting industry.</p>
         </div>
         <div className="builds flex flex-col justify-center items-center text-center gap-y-10 lg:flex-row lg:pb-64 lg:pt-52">
