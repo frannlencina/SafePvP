@@ -12,7 +12,8 @@ function GameMode() {
             <div className="gameHeader flex flex-col text-center items-center justify-center w-full h-64">
                 <div className="title">
                     <h3 className=' text-white font-bold text-5xl md:text-5xl lg:text-6xl m-2'>GAME MODES</h3>
-                    <p className='font-normal text-white opacity-50 text-lg mb-5 md:text-xl lg:text-2xl'>Lorem simply dummy text of the printing and typesetting industry.</p>
+                    <p className='font-normal text-white opacity-50 text-lg mb-5 md:text-xl lg:text-2xl'>Safe has several game modes, which you will find here with their description.
+</p>
                 </div>
             </div>
             <div className="modes">

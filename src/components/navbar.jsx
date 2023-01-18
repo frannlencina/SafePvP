@@ -45,7 +45,8 @@ function Navbar() {
                             <button onClick={toggleModal} className='w-8 rounded duration-300  hover:bg-gray-700 h-8 '><i class='bx bx-x text-gray-300'></i></button>
                         </div>
                         <div className="modalInfo mb-5">
-                            <p className='text-gray-400'>Connect with one of our available wallet providers or create a new one.</p>
+                            <p className='text-gray-400'>Visit and follow us on our social networks, where we publish all the updates.
+</p>
                         </div>
                         <div className="modalBody mt-5">
                             <ul>
@@ -57,7 +58,7 @@ function Navbar() {
                             </ul>
                         </div>
                         <div className="modalFooter mt-10">
-                            <a href='' className='text-gray-400 '> Lorem ipsum dolor sit amet consectetur <i class='bx bx-link'></i></a>
+                            <a href='https://es.namemc.com/server/safepvp.us' target='_blank' className='text-gray-400 '> Vote us on NameMc to get nice rewards <i class='bx bx-link'></i></a>
                         </div>
                     </div>
                 </div>

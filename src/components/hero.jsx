@@ -32,7 +32,7 @@ function Hero() {
                 <div className=" hero__title">
                     <h1 className='text-white font-bold text-6xl md:text-5xl lg:text-6xl'>WELCOME TO</h1>
                     <h2 className='text-white font-bold text-6xl mb-5 md:text-5xl lg:text-6xl'>SAFEPVP</h2>
-                    <p className='block font-medium text-white opacity-50 text-2xl mb-5 md:text-xl lg:text-2xl'>Lorem simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+                    <p className='block font-medium text-white opacity-50 text-2xl mb-5 md:text-xl lg:text-2xl'>The Safe community, one of the best without a doubt. Discover and immerse yourself in one of your best minecraft pvp experiences</p>
                 </div>
                 <div className="hero__players flex flex-col sm:flex-row md:text-sm lg:text-lg">
                 <div className="box__buttons">
