@@ -40,7 +40,7 @@ function Hero() {
                     </div>
                     <div className="box__players flex gap-x-3 px-5 py-3 rounded-lg bg-black bg-opacity-50 ml-5 text-center justify-center cursor-pointer hover:scale-110 transition-all duration-300">
                         <i class="ri-team-fill text-white"></i>
-                        <p className='textColor font-extrabold text-rose-600'> {playersOnline} </p><p className='font-extrabold text-white'>ONLINE</p><p className='font-medium text-white'>PLAYERS</p> <p className='text-red-700 font-bold'>{ onlinee ? '' : 'MAINTENANCE'}</p>
+                        <p className='textColor font-extrabold text-rose-600'> {playersOnline} </p><p className='font-extrabold text-white'>ONLINE</p><p className='font-medium text-white'>PLAYERS</p> <p className='text-red-700 font-bold'>{ onlinee ? '' : '0 [OFFLINE]'}</p>
                     </div>
                 </div>
             </div>

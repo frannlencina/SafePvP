@@ -6,20 +6,21 @@ import practiceCard from '../assets/imgs/Practice-Card2-min.png';
 
 import ModesCard from './modesCard';
 
-
 function GameMode() {
 
     const [open, setOpen] = useState(false);
     const [nick, setNick] = useState('');
+    const [description, setDescription] = useState('');
     
     const toggleModal = () => {
         setOpen(!open);
     }
 
     const handleCardClick = (e) => {
-        toggleModal();
         setNick(e.currentTarget.getAttribute('nick'));
+        setDescription(e.currentTarget.getAttribute('description'));
         console.log(nick + ' abierto')
+        toggleModal();
     }
 
     
@@ -35,17 +36,17 @@ function GameMode() {
             <div className="modes">
                 <div className="modesContainer flex flex-col items-center justify-center gap-10 py-20 p-20 lg:flex-row ">
                     <div className="kitmapContainer">
-                        <div nick="Kitmap" onClick={handleCardClick} className="kitmapImage w-80 lg:w-auto cursor-pointer hover:scale-105 duration-300 ease-out">
+                        <div nick="Kitmap" description="Kitmap is the sister game mode to HCF. In kitmap, you can equip diamond, bard and archer kits and you are free to kill anyone. You do not receive the death ban upon death." onClick={handleCardClick} className="kitmapImage w-80 lg:w-auto cursor-pointer hover:scale-105 duration-300 ease-out">
                             <img src={kitmapCard} alt="" />
                         </div>
                     </div>
                     <div className="hcfContainer w-80 lg:w-auto cursor-pointer hover:scale-105 duration-300 ease-out">
-                        <div nick="Hcf" onClick={handleCardClick} className="hcfImage">
+                        <div nick="Hcf" description="HCF (HardCoreFaction) consists of defending factions with special kits, weathering koths, sotw, eotw, ffas and without a doubt one of the most competitive modes of minecraft pvp." onClick={handleCardClick} className="hcfImage">
                             <img src={hcfCard} alt="" />
                         </div>
                     </div>
                     <div className="practiceContainer w-80 lg:w-auto cursor-pointer hover:scale-105 duration-300 ease-out">
-                        <div nick="Practice" onClick={handleCardClick} className="practiceImage">
+                        <div nick="Practice" description="Practice is a modality of minecraft which users use as its name says to practice, you can face other players 1vs1 with different kits." onClick={handleCardClick} className="practiceImage">
                             <img src={practiceCard} alt="" />
                         </div>
                     </div>
@@ -53,7 +54,7 @@ function GameMode() {
             </div>
             <div className="gameFooter w-full h-64"></div>
             {open && (
-                <ModesCard nick={nick} onClick={toggleModal} />
+                <ModesCard nick={nick} description={description} onClick={toggleModal} />
             )}
         </div>
     )
