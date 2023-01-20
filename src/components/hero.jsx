@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios";
+import { Toaster, toast } from 'react-hot-toast';
 
 import HeroRender from '../assets/imgs/hero-render-min.png'
 
 const baseURL = 'https://api.mcsrvstat.us/2/safepvp.us';
-
-import { Toaster, toast } from 'react-hot-toast';
 
 function Hero() {
     
@@ -36,7 +35,7 @@ function Hero() {
                 </div>
                 <div className="hero__players flex flex-col sm:flex-row md:text-sm lg:text-lg">
                 <div className="box__buttons">
-                        <button id="clipboard" onClick={Toast} value="safepvp.us" className='mb-5 sm:mb-0 px-2 py-2  rounded-lg font-semibold text-white transition-all duration-300 bg-rose-600 border-2 border-rose-600 hover:scale-110 hover:border-2 hover:border-rose-600 hover:bg-transparent'>COPY IP <i class="ri-clipboard-line"></i></button>
+                        <button id="clipboard" onClick={Toast} value="safepvp.us" className='mb-5 sm:mb-0 px-2 py-2  rounded-lg font-semibold text-white transition-all duration-300 bg-rose-600 border-2 border-rose-600 hover:scale-105 hover:text-main-black'>COPY IP <i class="ri-clipboard-line"></i></button>
                     </div>
                     <div className="box__players flex gap-x-3 px-5 py-3 rounded-lg bg-black bg-opacity-50 ml-5 text-center justify-center cursor-pointer hover:scale-110 transition-all duration-300">
                         <i class="ri-team-fill text-white"></i>

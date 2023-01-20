@@ -60,3 +60,8 @@
   background-color: rgba(0, 0, 0, 0.793);
   background-image: url('../assets/imgs/textureMinecraft-Builds.png');
 }
+
+.noMatchContainer{
+  background-color: white;
+  background-image: url('../assets/imgs/textureMinecraft-Builds.png');
+}
