@@ -34,16 +34,16 @@ function GameMode() {
             <div className="modes">
                 <div className="modesContainer flex flex-col items-center justify-center gap-10 py-20 p-20 lg:flex-row ">
                     <div className="kitmapContainer">
-                        <div title="Kitmap" description="Kitmap is the sister game mode to HCF. In kitmap, you can equip diamond, bard and archer kits and you are free to kill anyone. You do not receive the death ban upon death." onClick={handleCardClick} className="kitmapImage w-80 lg:w-auto cursor-pointer hover:scale-105 duration-300 ease-out">
+                        <div title="Kitmap" description="Kitmap is the sister game mode to HCF. In kitmap, you can equip diamond, bard and archer kits and you are free to kill anyone. You do not receive the death ban upon death." onClick={handleCardClick} className="kitmapImage w-80 lg:w-auto cursor-pointer hover:scale-105 hover:opacity-60 duration-300 ease-out">
                             <img src={kitmapCard} alt="" />
                         </div>
                     </div>
-                    <div className="hcfContainer w-80 lg:w-auto cursor-pointer hover:scale-105 duration-300 ease-out">
+                    <div className="hcfContainer w-80 lg:w-auto cursor-pointer hover:scale-105 hover:opacity-60 duration-300 ease-out">
                         <div title="Hcf" description="HCF (HardCoreFaction) consists of defending factions with special kits, weathering koths, sotw, eotw, ffas and without a doubt one of the most competitive modes of minecraft pvp." onClick={handleCardClick} className="hcfImage">
                             <img src={hcfCard} alt="" />
                         </div>
                     </div>
-                    <div className="practiceContainer w-80 lg:w-auto cursor-pointer hover:scale-105 duration-300 ease-out">
+                    <div className="practiceContainer w-80 lg:w-auto cursor-pointer hover:scale-105 hover:opacity-60 duration-300 ease-out">
                         <div title="Practice" description="Practice is a modality of minecraft which users use as its name says to practice, you can face other players 1vs1 with different kits." onClick={handleCardClick} className="practiceImage">
                             <img src={practiceCard} alt="" />
                         </div>

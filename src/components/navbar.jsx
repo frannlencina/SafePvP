@@ -29,9 +29,9 @@ function Navbar() {
                         <ul class="navLinks ">
                             <li className='flex flex-col md:flex-row md:gap-y-0 md:gap-x-6 '>
                                 <Link to="/" relative="path" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white "><i class="ri-home-4-line"></i> Home</Link>
-                                <a href="https://store.safepvp.us/" target="_blank" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white "> <i class="ri-shopping-cart-line"></i> Shop</a>
+                                <Link to="/shop" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white "> <i class="ri-shopping-cart-line"></i> Shop</Link>
                                 <Link to="/rules" relative="path" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white "><i class="ri-file-list-3-line"></i> Rules</Link>                         
-                                <Link to="/team" relative="path" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:text-white " ><i class="ri-group-line"></i> Team</Link>
+                                
                             </li>
                         </ul>
                         <button type="button" id='modalBtn' onClick={toggleModal} class="text-white ml-10 bg-main-rose hover:bg-rose-800 focus:ring-4 focus:outline-none focus:ring-rose-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Social</button>

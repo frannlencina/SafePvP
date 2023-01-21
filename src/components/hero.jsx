@@ -12,7 +12,7 @@ function Hero() {
     const [playersOnline, setPlayersOnline] = useState()
 
     function Toast(){
-        toast.success('IP COPIADA!');
+        toast.success('IP COPIADA !');
         const clipBoard = document.getElementById('clipboard')
             navigator.clipboard.writeText(clipBoard.value);
     }
@@ -35,11 +35,11 @@ function Hero() {
                 </div>
                 <div className="hero__players flex flex-col sm:flex-row md:text-sm lg:text-lg">
                 <div className="box__buttons">
-                        <button id="clipboard" onClick={Toast} value="safepvp.us" className='mb-5 sm:mb-0 px-2 py-2  rounded-lg font-semibold text-white transition-all duration-300 bg-rose-600 border-2 border-rose-600 hover:scale-105 hover:text-main-black'>COPY IP <i class="ri-clipboard-line"></i></button>
+                        <button id="clipboard" onClick={Toast} value="safepvp.us" className='mb-5 sm:mb-0 px-2 py-2  rounded-lg font-semibold text-white transition-all duration-300 bg-main-rose border-2 border-main-rose hover:scale-105 hover:text-main-black'>COPY IP <i class="ri-clipboard-line"></i></button>
                     </div>
-                    <div className="box__players flex gap-x-3 px-5 py-3 rounded-lg bg-black bg-opacity-50 ml-5 text-center justify-center cursor-pointer hover:scale-110 transition-all duration-300">
+                    <div className="box__players flex gap-x-3 px-5 py-3 rounded-lg bg-black bg-opacity-50 ml-5 text-center justify-center cursor-pointer hover:scale-105 transition-all duration-300">
                         <i class="ri-team-fill text-white"></i>
-                        <p className='textColor font-extrabold text-rose-600'> {playersOnline} </p><p className='font-extrabold text-white'>ONLINE</p><p className='font-medium text-white'>PLAYERS</p> <p className='text-red-700 font-bold'>{ onlinee ? '' : '0 [OFFLINE]'}</p>
+                        <p className='textColor font-extrabold text-main-rose'> {playersOnline} </p><p className='font-extrabold text-white'>ONLINE</p><p className='font-medium text-white'>PLAYERS</p> <p className='text-red-700 font-bold'>{ onlinee ? '' : '0 [OFFLINE]'}</p>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@ function Hero() {
             </div>
             <Toaster toastOptions={{
                 style: {
-                    fontWeight: "600",
+                    fontWeight: "700",
                 },
             }} />
         </div>
