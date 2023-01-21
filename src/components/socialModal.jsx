@@ -17,9 +17,9 @@ function SocialModal(props) {
                         <div className="modalBody mt-5">
                             <ul>
                                 <li className='flex flex-col text-white font-medium'>
-                                    <a href="#" className='flex items-center gap-x-2 bg-main-rose w-10/12 m-2 md:m-3 text-start p-3 rounded-lg  hover:bg-white hover:text-main-black duration-300 '><i class='bx  bxl-discord-alt bx-flip-horizontal shadow-md' ></i> Discord </a>
-                                    <a href="#" className='flex items-center gap-x-2 bg-main-rose w-10/12 m-2 md:m-3 text-start p-3 rounded-lg  hover:bg-white hover:text-main-black duration-300 '> <i class='bx bxl-youtube bg-white rounded bx-flip-horizontal shadow-md' ></i> Youtube <span class=" absolute right-20  text-sm font-medium mr-2 px-2.5 py-0.5 rounded bg-green-700 text-gray-300">New</span></a>
-                                    <a href="#" className='flex items-center gap-x-2 bg-main-rose w-10/12 m-2  md:m-3 text-start p-3 rounded-lg  hover:bg-white hover:text-main-black'> <i class='bx bxl-twitter bx-flip-horizontal shadow-md' ></i> Twitter</a>
+                                    <a href="https://discord.gg/KCYbBnJm" target="_blank" className='flex items-center gap-x-2 bg-main-rose w-10/12 m-2 md:m-3 text-start p-3 rounded-lg  hover:bg-white hover:text-main-black duration-300 '><i class='bx  bxl-discord-alt bx-flip-horizontal shadow-md' ></i> Discord </a>
+                                    <a href="https://www.youtube.com/@safepvpnetwork" target="_blank" className='flex items-center gap-x-2 bg-main-rose w-10/12 m-2 md:m-3 text-start p-3 rounded-lg  hover:bg-white hover:text-main-black duration-300 '> <i class='bx bxl-youtube bg-white rounded bx-flip-horizontal shadow-md' ></i> Youtube <span class=" absolute right-20  text-sm font-medium mr-2 px-2.5 py-0.5 rounded bg-green-700 text-gray-300">New</span></a>
+                                    <a href="https://twitter.com/SafePvPNetwork" target="_blank" className='flex items-center gap-x-2 bg-main-rose w-10/12 m-2  md:m-3 text-start p-3 rounded-lg  hover:bg-white hover:text-main-black'> <i class='bx bxl-twitter bx-flip-horizontal shadow-md' ></i> Twitter</a>
                                 </li>
                             </ul>
                         </div>
